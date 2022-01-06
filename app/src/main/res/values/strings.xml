@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SellBusTickets</string>
+
+    <!--******************************************************************************************************-->
+    <string name="title_sellBusTickets">Choose your ticket</string>
+    <string name="single_journey_text">Single journey ticket</string>
+    <string name="day_ticket_text">Day ticket</string>
+    <string name="week_ticket_text">Week ticket</string>
+    <string name="number_tickets_text">Add the number of ticket to order</string>
+    <string name="valider_text">Validate</string>
+    <string name="annuler_text">Cancel</string>
+    <string name="error_text">You must add the number of tickets to order !</string>
+    <string name="pay_button">Pay</string>
+    <string name="list_tickets">List of tickets ordered</string>
+    <string name="no_ordered_tickets_error">You didn\'t order any tickets to access to the payment !</string>
+    <string name="ok_text">ok</string>
+    <string name="continue_to_order_text">Continue to order</string>
+    <string name="modify_number_ticket_text">Modify the number of ticket</string>
+    <string name="total_payment">Total of payment : </string>
+    <string name="confirm_payment">Do you want to confirm the payment ?</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+    <string name="history_transactions_text">History of transactions</string>
+    <string name="order_tickets_text">Order Tickets</string>
+    <string name="welcome_app">Welcome in the bus ticket App</string>
+    <string name="no_transaction_text">No transactions created !</string>
+    <string name="list_transactions_text">List of transactions</string>
+    <string name="cancel_payment">Do you want to cancel the payment ?</string>
+
+</resources>
