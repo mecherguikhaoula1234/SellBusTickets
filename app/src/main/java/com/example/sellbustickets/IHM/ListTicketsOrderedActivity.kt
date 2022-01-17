@@ -121,6 +121,7 @@ class ListTicketsOrderedActivity: AppCompatActivity() {
         intent.putExtra("client", "{\"phone\":\"27944014\",\"email\":\"mecherguikhaoula1234@gmail.com\"}")
         val jArray = JSONArray("[\"hello printer\", \"this is a\", \"    wonderful\", \"        TICKET\"]")
         val receiptTicket = ArrayList<String>()
+        
         for (i in 0 until jArray.length()) {
             try {
                 receiptTicket.add(jArray.getString(i))
