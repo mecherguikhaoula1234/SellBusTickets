@@ -25,8 +25,6 @@ class ListTransactionsActivity: AppCompatActivity() {
         listTransactions = transactionsRepository.findAll()
         listTransactionsAdapter = ListTransactionsAdapter(this, listTransactions)
         list_transaction_listview.adapter = listTransactionsAdapter
-
-
     }
 
     /**
