@@ -34,8 +34,22 @@ class TicketsDatabaseOpenHelper(context: Context) : ManagedSQLiteOpenHelper(cont
     }
 
     override fun onUpgrade(database: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
-        database.dropTable(TICKET_TABLE_NAME, ifExists = true)
-        database.dropTable(TRANSACTION_TABLE_NAME, ifExists = true)
+        if (oldVersion == 6 && newVersion==7) {
+                    
+            database.dropTable(TICKET_TABLE_NAME, ifExists = true)   
+            database.createTable(TICKET_TABLE_NAME,                          
+                                 true,                             
+                                 "idTicket" to INTEGER + NOT_NULL + PRIMARY_KEY + AUTOINCREMENT,                             
+                                 "typeTicket" to TEXT ,                                      
+                                 "priceTicket" to REAL,                                        
+                                 "numberTicket" to INTEGER)
+     
+            database.dropTable(TRANSACTION_TABLE_NAME, ifExists = true)
+            database.createTable(TRANSACTION_TABLE_NAME, true,         
+                           
+                                 "id" to INTEGER + NOT_NULL + PRIMARY_KEY + AUTOINCREMENT,                                              
+                                 "idTransaction" to TEXT,                                                 
+                                 "amountTransaction" to INTEGER )             
+        }
     }
-
 }
